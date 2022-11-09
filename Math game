@@ -1,0 +1,16 @@
+## Prompt the user by asking for a multiplication table for the number of their choice. 
+Generate the multiplication table for 1 to 10 times that number and ask each math fact as a question (psst...that's a hint).
+If the user gets the math correct, award them a point. If they get it wrong, do not give them any points.
+
+
+print("Multiplicate game \n \n ")
+number= int(input ("what multiplication  table do yo want to do? :"))
+
+for i in range (1, 10):
+  print("what is", i, "x" ,number ,":")
+  answer= int(input ())
+  if answer == i*number: 
+    print ("great job \n")
+  else:
+    print("Wrong!!!\n The correct answer is ", i*number, "\n")
+
